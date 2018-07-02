@@ -1,0 +1,10 @@
+.block {
+    padding: 0 30px;
+    margin: 0 auto;
+
+    &--full {
+        padding: 0;
+        max-width: 600px - 60px;
+        
+    }
+}

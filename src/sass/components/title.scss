@@ -1,0 +1,28 @@
+.title {
+    position: relative;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    line-height: 1.0625rem;
+    padding: 13px 0 9px 0;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    &__right {
+        position: absolute;
+        right: 0;
+        font-size: 0.625rem;
+        color: green;
+    }
+
+
+    &::before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        position: absolute;
+        top: 3px;
+    }
+}

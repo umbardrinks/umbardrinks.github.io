@@ -1,0 +1,10 @@
+.pictures {
+    font-size: 0;
+    &__image {
+        width: 25%;
+        display: inline-block; 
+        @include breakpoint('mobile') {
+            width: 50%;
+        }
+    }
+}

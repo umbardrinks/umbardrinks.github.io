@@ -1,0 +1,16 @@
+.timetable {
+    width: 100%;
+    td {
+        padding: 5px 0;
+        font-size: 0.8125rem;
+
+        &:nth-child(1) {
+            width: 120px;
+            // font-weight: bold;
+        }
+    }
+
+    &__row-today {
+        font-weight: bold;
+    }
+}
