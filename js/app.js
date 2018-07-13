@@ -68,7 +68,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(4);
+module.exports = __webpack_require__(5);
 
 
 /***/ }),
@@ -79,7 +79,7 @@ module.exports = __webpack_require__(4);
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_timetable__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_nav__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_pictures__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_pictures__ = __webpack_require__(4);
 
 
 
@@ -154,9 +154,12 @@ function Timetable() {
         e.preventDefault();
         var anchor = this.attributes.href.nodeValue.substr(1);
         var section = document.querySelector('#section_' + anchor);
+        // alert(section.offsetTop)
         var rect = section.getBoundingClientRect();
-        var top = rect.top + window.scrollY;
-        window.scrollTo(0, top - 80);
+        var win = section.ownerDocument.defaultView;
+        var top = rect.top + win.pageYOffset;
+
+        window.scrollTo(0, top);
 
         // Closes the nav menu
         toogleNav();
@@ -174,16 +177,6 @@ function Timetable() {
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */,
-/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -231,6 +224,12 @@ function Pictures() {
         current_image = prev_image;
     }
 }
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

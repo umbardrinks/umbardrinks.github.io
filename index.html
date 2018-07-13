@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/app.css?20180712">
+    <link rel="stylesheet" href="./css/app.css?20180713">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
@@ -14,9 +14,11 @@
 <body>
     <div class="container">
         <nav class="nav" id="nav">
-            <a href="#quem" class="nav__item">Quem?</a>
-            <a href="#onde" class="nav__item">Onde?</a>
-            <a href="#horarios" class="nav__item">Horários</a>
+            <a href="#quem" class="nav__item">Ümbar</a>
+            <a href="#onde" class="nav__item">Como chegar</a>
+            <a href="#aprenda" class="nav__item">Aprenda a fazer drinks</a>
+            <a href="#evento" class="nav__item">Seu evento aqui</a>
+            <a href="#horarios" class="nav__item">Horários de funcionamento</a>
             <a href="#contato" class="nav__item">Contato</a>
             <a href="#fotos" class="nav__item">Fotos</a>
         </nav>
@@ -94,16 +96,81 @@
         <section class="module" id="section_quem">
             <div class="block">
                 <h1 class="title">
-                    Have drinks; Have fun
+                    Uma nova experiência de coquetelaria no Ipiranga
                 </h1>
 
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula diam in enim consequat ultricies. Integer vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula diam in enim consequat ultricies. Integer vitae.</p>
+                    <p>Ambiente aconchegante, no coração de São Paulo em um dos bairros mais tradicionais da cidade, feito para você se sentir em
+                    casa e aproveitar toda a energia que uma barra pode te proporcionar.</p>
+
+                    <p>Ümbar, além de significar destino, deriva da palavra "barra" ou, do francês, "barré", que no século XVIII foi o nome dado
+                    pelas antigas tabernas ao suporte que segurava e apoiava as degustações de bebidas e que hoje é conhecido como balcão.</p>
+
+                    <p>Nossa carta de coqueteis especiais foi desenvolvida especialmente para a casa e, frequentemente, inserimos novas opções para
+                    nossos clientes desfrutarem do arte da mixologia.</p>
                 </div>
             </div>
 
             <div class="block block--full">
-                <img class="image" src="images/alcohol-bar-beverage-225236.jpg" />
+                <picture>
+                    <source srcset="images/alcohol-bar-beverage-225236--1080.jpg 2x, images/alcohol-bar-beverage-225236--540.jpg 1x"
+                        media="(min-width: 600px)">
+                    <source srcset="images/alcohol-bar-beverage-225236--828.jpg" media="(max-width: 599px)">
+                    <img class="image" />
+                </picture>
+            </div>
+        </section>
+
+        <section class="module" id="section_aprenda">
+            <div class="block">
+                <h1 class="title">
+                    Aprenda a preparar seus próprios drinks
+                </h1>
+
+                <div class="content">
+                    <p>Quer aprender a produzir coqueteis junto com a sua turma? Vem pro Ümbar! Inscreva-se nos módulos de Aulas em Turma e assuma
+                    a nossa barra!</p>
+
+                    <p><a href="/#/contato">Consulte nossa equipe</a> para saber mais sobre os cursos e disponibilidade de datas.</p>
+                </div>
+            </div>
+
+            <div class="block block--full">
+                <picture>
+                    <source srcset="images/adult-alcohol-alcohol-bottles-681846--1080.jpg 2x, images/adult-alcohol-alcohol-bottles-681846--540.jpg 1x" media="(min-width: 600px)">
+                    <source srcset="images/adult-alcohol-alcohol-bottles-681846--828.jpg" media="(max-width: 599px)">
+                    <img class="image" />
+                </picture>
+            </div>
+        </section>
+
+        <section class="module" id="section_evento">
+            <div class="block">
+                <h1 class="title">
+                    Faça seu evento aqui!
+                </h1>
+
+                <div class="content">
+                    <p>Que tal reunir os amigos, comemorar o aniversário, fazer um happy hour da galera curtindo uma nova experiência? <a href="/#/contato"></a>Consulte
+                    a casa para reservas</a>.</p>
+
+                    <p>Todas as reservas ganham <strong>welcome drink</strong>* cortesia para toda a lista de convidados* ou brinde especial para o aniversariante*</p>
+
+                    <p><small class="content__asteriscos">
+                         * Garantimos o welcome drink para a sua lista enviada com no mínimo 3 dias de antecedência.<br>
+                         ** O Welcome Drink pode variar de acordo com o dia. A casa irá escolher e desenvolver o welcome drink.<br>
+                         *** O brinde especial será escolhido pela casa e dado no dia do evento agendado
+                    </small></p>
+                </div>
+            </div>
+
+            <div class="block block--full">
+                <picture>
+                    <source srcset="images/umbar-party--1080.jpg 2x, images/umbar-party--540.jpg 1x"
+                        media="(min-width: 600px)">
+                    <source srcset="images/umbar-party--828.jpg" media="(max-width: 599px)">
+                    <img class="image" />
+                </picture>
             </div>
         </section>
 
@@ -140,19 +207,19 @@
                 </tr>
                 <tr data-day="3">
                     <td>Quarta-feira</td>
-                    <td>16:00 — 00:00</td>
+                    <td>18:00 — 23:00</td>
                 </tr>
                 <tr  data-day="4">
                     <td>Quinta-feira</td>
-                    <td>16:00 — 00:00</td>
+                    <td>18:00 — 23:00</td>
                 </tr>
                 <tr data-day="5">
                     <td>Sexta-feira</td>
-                    <td>16:00 — 01:00</td>
+                    <td>18:00 — 23:00</td>
                 </tr>
                 <tr data-day="6">
                     <td>Sábado</td>
-                    <td>16:00 — 01:00</td>
+                    <td>14:00 — 23:00</td>
                 </tr>
                 <tr data-day="0">
                     <td>Domingo</td>
@@ -195,17 +262,41 @@
                     </button>
 
                     <div class="pictures__images">
-                        <img src="images/fotos/bartender01.jpg" class="pictures__image pictures__image--show">
-                        <img src="images/fotos/bartender02.jpg" class="pictures__image">
-                        <img src="images/fotos/copos.jpg" class="pictures__image">
-                        <img src="images/fotos/drink01.jpg" class="pictures__image">
-                        <img src="images/fotos/shots.jpg" class="pictures__image">
-                        <!--  -->
-                        <!-- <img src="http://placehold.it/500x500" class="pictures__image">
-                        <img src="http://placehold.it/500x500" class="pictures__image">
-                        <img src="http://placehold.it/500x500" class="pictures__image">
-                        <img src="http://placehold.it/500x500" class="pictures__image">
-                        <img src="http://placehold.it/500x500" class="pictures__image"> -->
+                        <picture>
+                            <source srcset="images/fotos/bartender01--960.jpg 2x, images/fotos/bartender01--540.jpg 1x" media="(min-width: 600px)">
+                            <source srcset="images/fotos/bartender01--828.jpg" media="(max-width: 599px)">
+                            <img class="pictures__image pictures__image--show" />
+                        </picture>
+
+                        <picture>
+                            <source srcset="images/fotos/bartender02--960.jpg 2x, images/fotos/bartender02--540.jpg 1x" media="(min-width: 600px)">
+                            <source srcset="images/fotos/bartender02--828.jpg" media="(max-width: 599px)">
+                            <img class="pictures__image" />
+                        </picture>
+
+                        <picture>
+                            <source srcset="images/fotos/copos--1080.jpg 2x, images/fotos/copos--540.jpg 1x" media="(min-width: 600px)">
+                            <source srcset="images/fotos/copos--828.jpg" media="(max-width: 599px)">
+                            <img class="pictures__image" />
+                        </picture>
+
+                        <picture>
+                            <source srcset="images/fotos/drink01--1080.jpg 2x, images/fotos/drink01--540.jpg 1x" media="(min-width: 600px)">
+                            <source srcset="images/fotos/drink01--828.jpg" media="(max-width: 599px)">
+                            <img class="pictures__image" />
+                        </picture>
+
+                        <picture>
+                            <source srcset="images/fotos/drink02--1080.jpg 2x, images/fotos/drink02--540.jpg 1x" media="(min-width: 600px)">
+                            <source srcset="images/fotos/drink02--828.jpg" media="(max-width: 599px)">
+                            <img class="pictures__image" />
+                        </picture>
+
+                        <picture>
+                            <source srcset="images/fotos/drink03--1080.jpg 2x, images/fotos/drink03--540.jpg 1x" media="(min-width: 600px)">
+                            <source srcset="images/fotos/drink03--828.jpg" media="(max-width: 599px)">
+                            <img class="pictures__image" />
+                        </picture>
                     </div>
                     
                 </div>
@@ -221,12 +312,11 @@
 
         <footer class="block">
             <div class="footer">
-                <a href="http://github.com/umbardrinks/site" target="_blank">proud to be open source</a>
+                <a href="http://github.com/umbardrinks/site" target="_blank">proud to be open source &lt;3</a>
             </div>
         </footer>
     </div>
 
-
-    <script src="js/app.js?20180712"></script>
+    <script src="js/app.js?20180713"></script>
 </body>
 </html>

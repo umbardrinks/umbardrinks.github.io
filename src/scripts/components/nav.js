@@ -37,9 +37,12 @@ export default function() {
         e.preventDefault();
         let anchor = this.attributes.href.nodeValue.substr(1);
         let section = document.querySelector('#section_' + anchor);
+        // alert(section.offsetTop)
         let rect = section.getBoundingClientRect();
-        let top = rect.top + window.scrollY;
-        window.scrollTo(0, top - 80);
+        let win = section.ownerDocument.defaultView;
+        let top = rect.top + win.pageYOffset;
+        
+        window.scrollTo(0, top);
 
         // Closes the nav menu
         toogleNav();

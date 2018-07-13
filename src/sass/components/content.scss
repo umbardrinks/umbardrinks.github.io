@@ -6,4 +6,13 @@
     strong {
         font-weight: bold;
     }
+
+    p {
+        margin: 1em 0;
+    }
+
+    &__asteriscos {
+        font-size: 0.8em;
+        color: #555;
+    }
 }

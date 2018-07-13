@@ -495,7 +495,7 @@ a {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: 10px 0;
   text-decoration: none;
   border-bottom: 2px solid #fff;
   padding-bottom: 4px;
@@ -574,6 +574,15 @@ a {
 
 .content strong {
   font-weight: bold;
+}
+
+.content p {
+  margin: 1em 0;
+}
+
+.content__asteriscos {
+  font-size: 0.8em;
+  color: #555;
 }
 
 .image {
