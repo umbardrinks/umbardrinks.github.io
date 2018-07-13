@@ -105,7 +105,7 @@ function Timetable() {
             if (tr.dataset.day == day) {
                 tr.className = "timetable__row-today";
 
-                tr.getElementsByTagName('td')[0].innerHTML = "Hoje";
+                // tr.getElementsByTagName('td')[0].innerHTML = "Hoje";
             }
         }
     }
@@ -122,11 +122,16 @@ function Timetable() {
     var nav = document.getElementById('nav');
     var logo = document.getElementById('logo');
     var items = nav.getElementsByClassName('nav__item');
+    var items_content = document.getElementsByClassName('-nav_item');
+
+    console.log(items_content);
 
     // Add events
     button.addEventListener('click', handleBurgerMenuClick);
     for (var x = 0; x < items.length; x++) {
         items[x].addEventListener('click', handleItemClick);
+    }for (var x = 0; x < items_content.length; x++) {
+        items_content[x].addEventListener('click', handleItemClick);
     }function toogleNav() {
         if (!opened) {
             nav.className += " nav--show";
@@ -161,8 +166,10 @@ function Timetable() {
 
         window.scrollTo(0, top - 20);
 
-        // Closes the nav menu
-        toogleNav();
+        // Closes the nav menu (if the click came from the nav component)
+        if (/nav__item/.test(this.className)) {
+            toogleNav();
+        }
 
         return false;
     }

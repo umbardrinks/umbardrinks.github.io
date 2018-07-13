@@ -10,7 +10,7 @@ export default function Timetable() {
             if(tr.dataset.day == day) {
                 tr.className = "timetable__row-today";
 
-                tr.getElementsByTagName('td')[0].innerHTML = "Hoje";
+                // tr.getElementsByTagName('td')[0].innerHTML = "Hoje";
             }
         }
     }

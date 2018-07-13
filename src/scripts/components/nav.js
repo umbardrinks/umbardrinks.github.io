@@ -4,10 +4,14 @@ export default function() {
     const nav = document.getElementById('nav');
     const logo = document.getElementById('logo');
     const items = nav.getElementsByClassName('nav__item');
+    const items_content = document.getElementsByClassName('-nav_item');
+
+    console.log(items_content);
 
     // Add events
     button.addEventListener('click', handleBurgerMenuClick);
     for(var x = 0; x<items.length; x++) items[x].addEventListener('click', handleItemClick);
+    for(var x = 0; x<items_content.length; x++) items_content[x].addEventListener('click', handleItemClick);
     
 
     function toogleNav() {
@@ -44,8 +48,11 @@ export default function() {
         
         window.scrollTo(0, top - 20);
 
-        // Closes the nav menu
-        toogleNav();
+        // Closes the nav menu (if the click came from the nav component)
+        if(/nav__item/.test(this.className)) {
+            toogleNav();
+        }
+        
 
         return false;
     }

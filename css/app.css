@@ -580,6 +580,10 @@ a {
   margin: 1em 0;
 }
 
+.content a {
+  text-decoration: underline;
+}
+
 .content__asteriscos {
   font-size: 0.8em;
   color: #555;
