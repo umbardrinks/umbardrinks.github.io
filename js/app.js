@@ -159,7 +159,7 @@ function Timetable() {
         var win = section.ownerDocument.defaultView;
         var top = rect.top + win.pageYOffset;
 
-        window.scrollTo(0, top);
+        window.scrollTo(0, top - 20);
 
         // Closes the nav menu
         toogleNav();

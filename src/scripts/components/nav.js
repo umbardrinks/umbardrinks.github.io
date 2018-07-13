@@ -42,7 +42,7 @@ export default function() {
         let win = section.ownerDocument.defaultView;
         let top = rect.top + win.pageYOffset;
         
-        window.scrollTo(0, top);
+        window.scrollTo(0, top - 20);
 
         // Closes the nav menu
         toogleNav();
