@@ -9,6 +9,8 @@ export default function Timetable() {
             let tr = trs[y];
             if(tr.dataset.day == day) {
                 tr.className = "timetable__row-today";
+
+                tr.getElementsByTagName('td')[0].innerHTML = "Hoje";
             }
         }
     }

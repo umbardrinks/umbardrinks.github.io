@@ -1,0 +1,13 @@
+.h-mobile-only {
+    display: none;
+    @include breakpoint('mobile') {
+        display: block;
+    }
+}
+
+.h-desktop-only {
+    display: block;
+    @include breakpoint('mobile') {
+        display: none;
+    }
+}

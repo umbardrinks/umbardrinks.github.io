@@ -1,3 +1,12 @@
 .header {
+    position: relative;
+    z-index: 200;
     padding: 36px 0 50px 0;
+
+    &__burger-menu {
+        position: absolute;
+        top: 50%;
+        left: 30px;
+        margin-top: -20px;
+    }
 }

@@ -2,7 +2,21 @@
     text-align: center;
     &__image {
         width: 120px;
-        margin: 0 auto;
+        margin: 0 auto;        
     }
+
+    svg path {
+        transform: translate3d(0,0,0);
+        transition-property: fill;
+        transition-duration: 400ms;
+    }
+
+    &--inverse {
+        svg path {
+            fill: #fff !important;
+        }
+    }
+
+    
     
 }

@@ -1,0 +1,115 @@
+.burger-menu {
+    $cor-on: #eee;
+    $cor-off: #000;
+
+    @keyframes bottom-line-to-x {
+        0% {
+            transform: translate3d(0, 0, 0) rotate(0deg);
+            background-color: $cor-off;
+        }
+        
+        50% {
+            transform: translate3d(0, -11px, 0) rotate(0deg);
+        }
+        
+        100% {
+            transform: translate3d(0, -11px, 0) rotate(45deg);
+            background-color: $cor-on;
+        }
+    }
+
+    @keyframes bottom-line-to-burger {
+        0% {
+            transform: translate3d(0, -11px, 0) rotate(45deg);
+            background-color: $cor-on;
+        }
+        
+        50% {
+            transform: translate3d(0, -11px, 0) rotate(0deg);
+        }
+        
+        100% {
+            transform: translate3d(0, 0, 0) rotate(0deg);
+            background-color: $cor-off;
+        }
+    }
+
+    @keyframes top-line-to-x {
+        0% {
+            transform: translate3d(0, 0, 0) rotate(0deg);
+            background-color: $cor-off;
+        }
+        
+        50% {
+            transform: translate3d(0, 11px, 0) rotate(0deg);
+        }
+        
+        100% {
+            transform: translate3d(0, 11px, 0) rotate(-45deg);
+            background-color: $cor-on;
+        }
+    }
+
+    @keyframes top-line-to-burger {
+        0% {
+            transform: translate3d(0, 11px, 0) rotate(-45deg);
+            background-color: $cor-on;
+        }
+        
+        50% {
+            transform: translate3d(0, 11px, 0) rotate(0deg);
+        }
+        
+        100% {
+            transform: translate3d(0, 0, 0) rotate(0deg);
+            background-color: $cor-off;
+        }
+    }
+
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    width: 30px;
+    height: 23px;
+    transform: translate3d(0, 0, 0);
+
+    >div {
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        left: 0;
+        // transform-origin: 50% 50%;
+        // transform: translate3d(0, 0, 0);
+        transition-property: opacity;
+        transition-duration: 300ms;
+        transition-delay: 200ms;
+
+        animation-duration: 400ms;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+
+        &:nth-child(1) { top: 0 }
+        &:nth-child(2) { top: 11px }
+        &:nth-child(3) { bottom: 0 }
+    }
+
+
+    &--close {
+        >div {
+            &:nth-child(1) { animation-name: top-line-to-x }
+            &:nth-child(2) { opacity: 0; }
+            &:nth-child(3) { animation-name: bottom-line-to-x }
+        }
+    }
+
+
+    &--open {
+        >div {
+            &:nth-child(1) { animation-name: top-line-to-burger }
+            &:nth-child(2) { opacity: 1; }
+            &:nth-child(3) { animation-name: bottom-line-to-burger }
+        }
+    }
+}
