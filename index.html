@@ -1,354 +1,78 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG"
-        crossorigin="anonymous">
     <title>Ümbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body,html,img {
+            width: 100%;
+            height: 100%;
+        }
 
-    <meta property="og:url" content="https://www.umbar.com.br"
-    />
-    <meta property="og:type" content="restaurant.restaurant" />
-    <meta property="og:title" content="Ümbar - Uma nova experiência de coquetelaria no Ipiranga" />
-    <meta property="og:description" content="Ambiente aconchegante, no coração de São Paulo em um dos bairros mais tradicionais da cidade, feito para você se sentir em casa e aproveitar toda a energia que uma barra pode te proporcionar" />
-    <meta property="og:image" content="https://www.umbar.com.br/images/facebook-share--1080.jpg" />
+        body {
+            background-color: #000;
+        }
 
-    <meta property="restaurant:contact_info:street_address" content="Rua Costa Aguiar, 1482" />
-    <meta property="restaurant:contact_info:locality" content="São Paulo" />
-    <meta property="restaurant:contact_info:region" content="São Paulo" />
-    <meta property="restaurant:contact_info:postal_code" content="04204-001" />
-    <meta property="restaurant:contact_info:country_name" content="Brasil" />
-    <meta property="restaurant:contact_info:email" content="umbar.drinks&#064;gmail.com" />
-    <meta property="restaurant:contact_info:phone_number" content="11 2061-4764" />
-    <meta property="restaurant:contact_info:website" content="https://www.umbar.com.br" />
-    <meta property="place:location:latitude" content="-23.5870698" />
-    <meta property="place:location:longitude" content="-46.6085729" />
+        .canal {
+            position: absolute;
+            top: 60px;
+            right: 60px;
+            color: greenyellow;
+            font-family: 'VT323', monospace;
+            font-size: 64px;
+        }
 
+        @media screen and (max-width: 768px) {
+            .canal {
+                font-size: 42px;
+            }
+        }
+    </style>
 
-
-
-
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <nav class="nav" id="nav">
-            <a href="#quem" class="nav__item">Ümbar</a>
-            <a href="#aprenda" class="nav__item">Aprenda a fazer drinks</a>
-            <a href="#evento" class="nav__item">Seu evento aqui</a>
-            <a href="#onde" class="nav__item">Como chegar</a>
-            <a href="#horarios" class="nav__item">Horários</a>
-            <a href="#contato" class="nav__item">Contato</a>
-            <a href="#fotos" class="nav__item">Fotos</a>
-        </nav>
+    <!-- Sua chamada está sendo encaminhada para a caixa de mensagens e estará sujeita a cobrança após o sinal. -->
 
-        <header class="header">
-            <button class="burger-menu header__burger-menu" id="BurgerMenuButton">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
+    <div class="canal">VHF <span id="canalNumero">7</span></div>
 
-            <div class="logo" id="logo">
-                <svg class="logo__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="0 0 544.7 318.6" style="enable-background:new 0 0 544.7 318.6;" xml:space="preserve">
-                    <g>
-                        <g>
-                            <g>
-                                <path d="M252.3,318.3v-2.2c-1.7,1.7-3.4,2.5-6.2,2.5c-2.6,0-5-0.9-6.6-2.5c-2.7-2.7-2.5-7.4-2.5-11.4c0-4-0.2-8.7,2.5-11.4
-                				c1.6-1.6,3.9-2.5,6.5-2.5c2.7,0,4.5,0.8,6,2.3v-10.7h8.3v35.8H252.3z M248.7,298.4c-3.1,0-3.4,2.5-3.4,6.4c0,3.9,0.4,6.4,3.4,6.4
-                				c3.1,0,3.4-2.5,3.4-6.4C252.1,300.8,251.7,298.4,248.7,298.4z" />
-                                <path d="M283.7,299.8c-0.8-0.8-1.6-1.4-3-1.4c-1.1,0-3.3,0.7-3.3,3.7v16.2h-8.3v-27.1h8.1v2.2c1.2-1.2,3.6-2.5,6.4-2.5
-                				c2.7,0,4.5,0.7,6.3,2.5L283.7,299.8z" />
-                                <path d="M295.5,288.4v-6.3h8.3v6.3H295.5z M295.5,318.3v-26h8.3v26H295.5z" />
-                                <path d="M327.5,318.3v-16.2c0-3.1-2.2-3.7-3.3-3.7c-1.1,0-3.3,0.6-3.3,3.7v16.2h-8.3v-27.1h8.1v2.2c1.7-1.7,4.1-2.5,6.3-2.5
-                				c2.6,0,4.6,0.9,6.1,2.3c2.3,2.3,2.7,4.9,2.7,7.8v17.3H327.5z" />
-                                <path d="M359.7,318.3l-5.6-9.9l-1.6,1.8v8.2h-8.3v-35.8h8.3v18.2l7.3-9.5h9.9l-10,11.2l10.2,15.9H359.7z" />
-                                <path d="M384.8,318.6c-4.1,0-8.1-0.2-11.8-3.9l5.3-5.3c2.3,2.3,5.2,2.3,6.6,2.3c1.2,0,3.5-0.4,3.5-1.8c0-0.8-0.4-1.6-2-1.7
-                				l-4.2-0.4c-4.7-0.5-7.9-2.6-7.9-7.9c0-6,5.4-9,10.8-9c4.4,0,8,0.7,10.7,3.3l-5.1,5.1c-1.4-1.4-3.6-1.6-5.7-1.6
-                				c-2,0-2.7,1-2.7,1.6c0,0.3-0.1,1.3,1.8,1.5l4.2,0.4c5.7,0.6,8.2,3.9,8.2,8.3C396.5,315.8,391.1,318.6,384.8,318.6z" />
-                                <path d="M439.5,318.3l-2.3-2.6c-1.8,1.3-3.7,2.9-8.5,2.9c-8.5,0-12.1-4.2-12.1-11.2c0-4.1,3-7.2,5.7-9c-1.3-1.4-3.4-3.8-3.4-7.4
-                				c0-5.3,3.7-8.9,10.5-8.9c6.3,0,10,3.7,10,9c0,2.7-1.3,4.5-3.5,6.1c0,0-1.6,1.3-2.5,1.9l4.2,4.9c1-1.2,1.5-3.5,1.7-5.2h7.8
-                				c-0.4,4.7-1.6,8.4-4.2,11.2l7,8.2H439.5z M426.6,303.4c-1.7,1.2-2.1,2.2-2.1,3.9c0,2.2,2,3.8,4.2,3.8c1.8,0,2.7-0.6,3.5-1.3
-                				L426.6,303.4z M429.4,289.1c-1.7,0-2.3,0.9-2.3,2.2c0,1.1,1.3,2.3,1.9,2.9c0.5-0.3,1.2-0.9,1.2-0.9c0.9-0.6,1.4-1.3,1.4-2.1
-                				C431.7,290,430.9,289.1,429.4,289.1z" />
-                                <path d="M478.3,298.6v19.7H470v-19.7h-2.5v-6.3h2.5v-2.4c0-3.7,2.4-8,8.4-8h4.4v6.9H480c-1.1,0-1.7,0.6-1.7,1.7v1.8h4.5v6.3
-                				H478.3z" />
-                                <path d="M504.6,318.3v-2.2c-1.7,1.7-4.1,2.5-6.3,2.5c-2.6,0-4.6-0.9-6.1-2.3c-2.3-2.3-2.7-4.9-2.7-7.8v-17.3h8.3v16.2
-                				c0,3.1,2.2,3.7,3.3,3.7c1.1,0,3.3-0.6,3.3-3.7v-16.2h8.3v27.1H504.6z" />
-                                <path d="M536.3,318.3v-16.2c0-3.1-2.2-3.7-3.3-3.7s-3.3,0.6-3.3,3.7v16.2h-8.3v-27.1h8.1v2.2c1.7-1.7,4.1-2.5,6.3-2.5
-                				c2.6,0,4.6,0.9,6.1,2.3c2.3,2.3,2.7,4.9,2.7,7.8v17.3H536.3z" />
-                            </g>
-                        </g>
-                        <g>
-                            <path d="M394.5,30.8c-20.2,0-37.1,15.8-38.4,36c0,0.1,0,0.3,0,0.4v187.1c0,3.7,3,6.7,6.7,6.7s6.7-3,6.7-6.7V145.1h50.1v109.2
-                			c0,3.7,3,6.7,6.7,6.7s6.7-3,6.7-6.7V67.2c0-0.1,0-0.3,0-0.4C431.6,46.6,414.7,30.8,394.5,30.8z M394.5,44.2
-                			c13.1,0,24.1,10.2,25,23.2v37.4h-50.1V67.5C370.5,54.4,381.4,44.2,394.5,44.2z M369.5,131.7v-13.4h50.1v13.4H369.5z" />
-                            <path d="M516.5,110c11-8,18.2-20.9,18.2-35.4c0-24.1-19.6-43.8-43.8-43.8h-20.7c-3.7,0-6.7,3-6.7,6.7v74.1v142.7
-                			c0,3.7,3,6.7,6.7,6.7s6.7-3,6.7-6.7V145.1h53c0.9,3.1,1.3,6.3,1.3,9.7v99.5c0,3.7,3,6.7,6.7,6.7c3.7,0,6.7-3,6.7-6.7v-99.5
-                			C544.7,135.1,533.2,118.1,516.5,110z M477,44.2h14c16.7,0,30.3,13.6,30.3,30.3s-13.6,30.3-30.3,30.3h-14V44.2z M477,131.7v-13.4
-                			h14h3.8c11.4,0,21.5,5.2,28.2,13.4H477z" />
-                            <g>
-                                <path d="M319.7,134.4c-7.2-11.9-17.2-21-28.7-25.8c10-8,16.4-20.3,16.4-34.1c0-24.1-19.6-43.8-43.8-43.8h-20.7
-                				c-3.7,0-6.7,3-6.7,6.7v74.1v142.7c0,3.7,3,6.7,6.7,6.7h29.5c32.8,0,59.6-33.7,59.6-75.2v-5.7c0-16.5-4.3-31.8-11.4-44.2
-                				C320.3,135.3,320,134.9,319.7,134.4z M272.4,118.3c10.8,0,20.8,5,28.7,13.4h-51.5v-13.4h14H272.4z M249.6,44.2h14
-                				c16.7,0,30.3,13.6,30.3,30.3s-13.6,30.3-30.3,30.3h-14V44.2z M318.6,185.8c0,34.1-20.7,61.8-46.2,61.8h-22.8V145.1h60.9
-                				c5.1,9.9,8.1,22,8.1,34.9V185.8z" />
-                            </g>
-                            <g>
-                                <path d="M73,30.8c-3.7,0-6.7,3-6.7,6.7v67.4H16.2V37.5c0-3.7-3-6.7-6.7-6.7s-6.7,3-6.7,6.7v187.1c0,0.1,0,0.3,0,0.4
-                				c1.3,20.2,18.2,36,38.4,36c20.2,0,37.1-15.8,38.4-36c0-0.1,0-0.3,0-0.4V37.5C79.7,33.8,76.7,30.8,73,30.8z M66.3,118.3v13.4H16.2
-                				v-13.4H66.3z M41.2,247.6c-13.1,0-24.1-10.2-25-23.2v-79.2h50.1v79.2C65.3,237.4,54.4,247.6,41.2,247.6z" />
-                                <path d="M19,9.5C19,4.3,14.8,0,9.5,0C4.3,0,0,4.3,0,9.5C0,14.8,4.3,19,9.5,19C14.8,19,19,14.8,19,9.5z" />
-                                <path d="M73,0c-5.2,0-9.5,4.3-9.5,9.5c0,5.2,4.3,9.5,9.5,9.5s9.5-4.3,9.5-9.5C82.5,4.3,78.2,0,73,0z" />
-                            </g>
-                            <path d="M201.6,31.4c-2.4-1.1-5.3-0.6-7.2,1.2l-36.5,33l-36.5-33c-2-1.8-4.8-2.2-7.2-1.2c-2.4,1.1-4,3.5-4,6.1v216.8
-                			c0,3.7,3,6.7,6.7,6.7s6.7-3,6.7-6.7V153.5l29.8,26.9c1.3,1.2,2.9,1.7,4.5,1.7s3.2-0.6,4.5-1.7l29.8-26.9v100.8
-                			c0,3.7,3,6.7,6.7,6.7s6.7-3,6.7-6.7V37.5C205.6,34.9,204.1,32.5,201.6,31.4z M192.2,135.5l-34.3,31l-34.3-31V120l34.3,31l34.3-31
-                			V135.5z M192.2,101.9l-34.3,31l-34.3-31V52.6l29.8,26.9c2.6,2.3,6.4,2.3,9,0l29.8-26.9V101.9z" />
-                        </g>
-                    </g>
-                </svg>
-            </div>
-        </header>
+    <script>
+        var off = [
+            'https://media.giphy.com/media/sC0vNYxuMYU24/giphy.gif',
+            'https://media.giphy.com/media/Yqn9tE2E00k4U/source.gif',
+            'https://media.giphy.com/media/Ph0oIVQeuvh0k/giphy.gif',
+            'https://media.giphy.com/media/EO9j0o6pHdYmk/source.gif',
+            'https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif',
+            'https://media.giphy.com/media/sCOqmzlHkzYmQ/source.gif',
+            'https://media.giphy.com/media/l2SpSPD5I0NfXI4SI/source.gif',
+            'https://media.giphy.com/media/Zu6e7EHfGghIk/source.gif',
+            'https://media.giphy.com/media/l2SpSPD5I0NfXI4SI/source.gif'
+        ];
 
-        <section class="module" id="section_quem">
-            <div class="block">
-                <h1 class="title">
-                    Uma nova experiência de coquetelaria no Ipiranga
-                </h1>
+        var img = document.createElement('img');
+        var index = Math.floor(Math.random()*off.length)
+        var numero = document.getElementById('canalNumero');
 
-                <div class="content">
-                    <p>Ambiente aconchegante, no coração de São Paulo em um dos bairros mais tradicionais da cidade, feito para você se sentir em
-                    casa e aproveitar toda a energia que uma barra pode te proporcionar.</p>
+        document.body.append(img);
 
-                    <p>Ümbar, além de significar destino, deriva da palavra "barra" ou, do francês, "barré", que no século XVIII foi o nome dado
-                    pelas antigas tabernas ao suporte que segurava e apoiava as degustações de bebidas e que hoje é conhecido como balcão.</p>
+        function changeChannel() {
+            numero.innerHTML = index+1;
+            img.src = off[index];
+            index++;
+            if(index >= off.length) index = 0;
+        }
 
-                    <p>Nossa carta de coqueteis especiais foi desenvolvida especialmente para a casa e, frequentemente, inserimos novas opções para
-                    nossos clientes desfrutarem do arte da mixologia.</p>
-                </div>
-            </div>
+        img.addEventListener('click', changeChannel);
+        img.addEventListener('touchstart', changeChannel);
 
-            <div class="block block--full">
-                <picture>
-                    <source srcset="images/alcohol-bar-beverage-225236--1080.jpg 2x, images/alcohol-bar-beverage-225236--540.jpg 1x"
-                        media="(min-width: 600px)">
-                    <source srcset="images/alcohol-bar-beverage-225236--828.jpg" media="(max-width: 599px)">
-                    <img class="image" />
-                </picture>
-            </div>
-        </section>
-
-        <section class="module" id="section_aprenda">
-            <div class="block">
-                <h1 class="title">
-                    Aprenda a preparar seus próprios drinks
-                </h1>
-
-                <div class="content">
-                    <p>Quer aprender a produzir coqueteis junto com a sua turma? Vem pro Ümbar! Inscreva-se nos módulos de Aulas em Turma e assuma
-                    a nossa barra!</p>
-
-                    <p><a href="#contato" class="-nav_item">Consulte nossa equipe</a> para saber mais sobre os cursos e disponibilidade de datas.</p>
-                </div>
-            </div>
-
-            <div class="block block--full">
-                <picture>
-                    <source srcset="images/adult-alcohol-alcohol-bottles-681846--1080.jpg 2x, images/adult-alcohol-alcohol-bottles-681846--540.jpg 1x" media="(min-width: 600px)">
-                    <source srcset="images/adult-alcohol-alcohol-bottles-681846--828.jpg" media="(max-width: 599px)">
-                    <img class="image" />
-                </picture>
-            </div>
-        </section>
-
-        <section class="module" id="section_evento">
-            <div class="block">
-                <h1 class="title">
-                    Faça seu evento aqui!
-                </h1>
-
-                <div class="content">
-                    <p>Que tal reunir os amigos, comemorar o aniversário, fazer um happy hour da galera curtindo uma nova experiência? <a href="#contato" class="-nav_item">Consulte
-                    a casa para reservas</a>.</p>
-
-                    <p>Todas as reservas ganham <strong>welcome drink</strong>* cortesia para toda a lista de convidados* ou brinde especial para o aniversariante*</p>
-
-                    <p><small class="content__asteriscos">
-                         * Garantimos o welcome drink para a sua lista enviada com no mínimo 3 dias de antecedência.<br>
-                         ** O Welcome Drink pode variar de acordo com o dia. A casa irá escolher e desenvolver o welcome drink.<br>
-                         *** O brinde especial será escolhido pela casa e dado no dia do evento agendado
-                    </small></p>
-                </div>
-            </div>
-
-            <div class="block block--full">
-                <picture>
-                    <source srcset="images/umbar-party--1080.jpg 2x, images/umbar-party--540.jpg 1x"
-                        media="(min-width: 600px)">
-                    <source srcset="images/umbar-party--828.jpg" media="(max-width: 599px)">
-                    <img class="image" />
-                </picture>
-            </div>
-        </section>
-
-
-        <section class="block module" id="section_onde">
-            <h2 class="title">Onde estamos</h2>
-            <div class="content">
-                <p>
-                    <address>
-                        Rua Costa Aguiar, 1482
-                        <br> Ipiranga, São Paulo
-                    </address>
-                </p>
-
-                <p class="h-mobile-only">
-                    <strong>Me leva de...</strong>
-                    <br>
-                    <a href="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=-23.587070&dropoff[longitude]=-46.606384&dropoff[nickname]=%C3%9Cmbar&dropoff[formatted_address]=Rua%20Costa%20Aguiar%2C%201482%20-%20Ipiranga%2C%20S%C3%A3o%20Paulo">Uber</a>,
-                    <a href="https://waze.com/ul?ll=-23.587070,-46.606384&navigate=yes">Waze</a>,
-                    <a href="https://www.google.com.br/maps/place/Rua+Costa+Aguiar,+1482+-+Ipiranga,+São+Paulo+-+SP,+04204-001/@-23.5870698,-46.6085729,17z/data=!4m13!1m7!3m6!1s0x94ce5bef6bc11da3:0x5866b38d3c99475d!2sRua+Costa+Aguiar,+1482+-+Ipiranga,+São+Paulo+-+SP,+04204-001!3b1!8m2!3d-23.5870698!4d-46.6063842!3m4!1s0x94ce5bef6bc11da3:0x5866b38d3c99475d!8m2!3d-23.5870698!4d-46.6063842">Google Maps</a>.
-                </p>
-
-                <p class="h-desktop-only">
-                    <a href="https://www.google.com.br/maps/place/Rua+Costa+Aguiar,+1482+-+Ipiranga,+São+Paulo+-+SP,+04204-001/@-23.5870698,-46.6085729,17z/data=!4m13!1m7!3m6!1s0x94ce5bef6bc11da3:0x5866b38d3c99475d!2sRua+Costa+Aguiar,+1482+-+Ipiranga,+São+Paulo+-+SP,+04204-001!3b1!8m2!3d-23.5870698!4d-46.6063842!3m4!1s0x94ce5bef6bc11da3:0x5866b38d3c99475d!8m2!3d-23.5870698!4d-46.6063842"
-                        target="_blank">Ver no mapa</a>.
-                </p>
-            </div>
-            
-            
-        </section>
-
-        <section class="block module" id="section_horarios">
-            <h2 class="title">
-                Horário de funcionamento
-            </h2>
-            <table class="timetable">
-                <tr data-day="1">
-                    <td>Segunda-feira</td>
-                    <td>Fechado</td>
-                </tr>
-                <tr data-day="2">
-                    <td>Terça-feira</td>
-                    <td>Fechado</td>
-                </tr>
-                <tr data-day="3">
-                    <td>Quarta-feira</td>
-                    <td>18:00 — 00:00</td>
-                </tr>
-                <tr  data-day="4">
-                    <td>Quinta-feira</td>
-                    <td>18:00 — 00:00</td>
-                </tr>
-                <tr data-day="5">
-                    <td>Sexta-feira</td>
-                    <td>18:00 — 00:30</td>
-                </tr>
-                <tr data-day="6">
-                    <td>Sábado</td>
-                    <td>18:00 — 00:30</td>
-                </tr>
-                <tr data-day="0">
-                    <td>Domingo</td>
-                    <td>Fechado</td>
-                </tr>
-            </table>
-        </section>
-
-
-        <section class="block module" id="section_contato">
-            <h2 class="title">Contato</h2>
-            <div class="content">
-                 <a href="mailto:umbar.drinks@gmail.com">umbar.drinks@gmail.com</a>
-            </div>
-        </section>
-
-
-        <section class="module" id="section_fotos">
-            <div class="block">
-                <h2 class="title">Fotos</h2>
-            </div>
-            
-            <div class="block block--full">
-                <div class="pictures" id="Pictures">
-                    <button class="pictures__button pictures__button--prev">
-                        <svg aria-hidden="true" data-prefix="fal" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left fa-w-8" role="img"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                            <path fill="currentColor" d="M238.475 475.535l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L50.053 256 245.546 60.506c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0L10.454 247.515c-4.686 4.686-4.686 12.284 0 16.971l211.051 211.05c4.686 4.686 12.284 4.686 16.97-.001z"></path>
-                        </svg>
-                        Anterior
-                    </button>
-
-                    <button class="pictures__button pictures__button--next">
-                        <svg aria-hidden="true" data-prefix="fal" data-icon="chevron-right" class="svg-inline--fa fa-chevron-right fa-w-8" role="img"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-                            <path fill="currentColor" d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"></path>
-                        </svg>
-                        Próxima
-                    </button>
-
-                    <div class="pictures__images">
-                        <picture>
-                            <source srcset="images/fotos/bartender01--960.jpg 2x, images/fotos/bartender01--540.jpg 1x" media="(min-width: 600px)">
-                            <source srcset="images/fotos/bartender01--828.jpg" media="(max-width: 599px)">
-                            <img class="pictures__image pictures__image--show" />
-                        </picture>
-
-                        <picture>
-                            <source srcset="images/fotos/bartender02--960.jpg 2x, images/fotos/bartender02--540.jpg 1x" media="(min-width: 600px)">
-                            <source srcset="images/fotos/bartender02--828.jpg" media="(max-width: 599px)">
-                            <img class="pictures__image" />
-                        </picture>
-
-                        <picture>
-                            <source srcset="images/fotos/copos--1080.jpg 2x, images/fotos/copos--540.jpg 1x" media="(min-width: 600px)">
-                            <source srcset="images/fotos/copos--828.jpg" media="(max-width: 599px)">
-                            <img class="pictures__image" />
-                        </picture>
-
-                        <picture>
-                            <source srcset="images/fotos/drink01--1080.jpg 2x, images/fotos/drink01--540.jpg 1x" media="(min-width: 600px)">
-                            <source srcset="images/fotos/drink01--828.jpg" media="(max-width: 599px)">
-                            <img class="pictures__image" />
-                        </picture>
-
-                        <picture>
-                            <source srcset="images/fotos/drink02--1080.jpg 2x, images/fotos/drink02--540.jpg 1x" media="(min-width: 600px)">
-                            <source srcset="images/fotos/drink02--828.jpg" media="(max-width: 599px)">
-                            <img class="pictures__image" />
-                        </picture>
-
-                        <picture>
-                            <source srcset="images/fotos/drink03--1080.jpg 2x, images/fotos/drink03--540.jpg 1x" media="(min-width: 600px)">
-                            <source srcset="images/fotos/drink03--828.jpg" media="(max-width: 599px)">
-                            <img class="pictures__image" />
-                        </picture>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section class="block module">
-            <div class="social-media">
-                <a href="https://www.instagram.com/umbardrinks" target="_blank" class="social-media__item"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/Umbar-Casa-de-Drinks-980888288740643/" target="_blank" class="social-media__item"><i class="fab fa-facebook-square"></i></a>
-            </div>
-        </section>
-
-        <footer class="block">
-            <div class="footer">
-                <a href="http://github.com/umbardrinks/site" target="_blank">proud to be open source &lt;3</a>
-            </div>
-        </footer>
-    </div>
-
-    <script src="js/app.js"></script>
+        changeChannel();
+    </script>
 </body>
 </html>
